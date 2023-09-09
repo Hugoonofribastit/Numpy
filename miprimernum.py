@@ -42,9 +42,9 @@ m4 = np.ones((2,3))
 
 print("v4 =", v4)
 print("m4 =", m4)
-
-
-# Full
+                             
+                        
+# Full.
 
 v5 = np.full((4),8)
 m5 = np.full((3,2),4)
