@@ -1,4 +1,7 @@
 import numpy as np
+import matplotlib.pyplot as plt
+
+
 # Vectores
 
 v1 = np.array([0,1,2,3,4,5,6,7,8,9], dtype="float")
@@ -60,3 +63,41 @@ data[0:2]
 data[1:]
 print(data[data >= 1])
 print(data[data % 3 == 0])
+
+
+np.linspace(0,10, num=20)
+
+a = np.array([1,2,3])
+b = a.copy()
+b[0] = 30
+a
+
+# matriz random de 4 x 2 con valores que van del 0 al 1
+x3 = np.random.rand(4,2)
+x3
+
+# matriz random de 2 x 2  con el maximo valor seteado en 10
+x4 = np.random.randint(10,size=(2,2))
+x4
+#matriz random de enteros que va del -100 al 200 que tiene 4 filas y 3 columnas
+x5 = np.random.randint(-100,200,size=(4,3))
+
+### Operaciones matematicas
+
+a = np.array([1,2,3])
+#a + 2
+#a * 2
+#a ** 3
+#a/ 2
+#np.cos(a)
+#np.sin(a)
+
+
+### Vectores
+#segemento orientado de recta (plano / espacio  array o lista para el informatico)
+
+plt.quiver(0,0,2,2,color="red",angles="xy",scale=1)
+plt.ylim(0,10)
+plt.xlim(0,10)
+plt.show()
+ 
